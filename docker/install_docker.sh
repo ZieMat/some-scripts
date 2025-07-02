@@ -46,7 +46,8 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 # Add user to docker group
 echo "Adding user to docker group..."
-sudo usermod -aG docker devops
+sudo usermod -aG docker $(echo | whoami)
+newgrp docker
 
 # Start Docker service
 echo "Starting Docker service..."
