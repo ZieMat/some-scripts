@@ -1,0 +1,5 @@
+1. Create file 'key'
+2. Copy token to the file 
+3. Execute command: '[Environment]::SetEnvironmentVariable("RANCHER_API_KEY", (Get-Content key -Raw).Trim(), "User")'
+4. Delete file
+
